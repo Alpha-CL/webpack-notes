@@ -1,0 +1,42 @@
+{
+  "name": "case-22-webpacl-js-babel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^6.0.2",
+    "css-loader": "^3.5.3",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.3.0",
+    "less": "^3.11.3",
+    "less-loader": "^6.1.0",
+    "style-loader": "^1.2.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
+    "@babel/plugin-proposal-function-bind": "^7.10.1",
+    "@babel/plugin-proposal-optional-chaining": "^7.10.1",
+    "@babel/plugin-transform-runtime": "^7.10.1",
+    "@babel/preset-env": "^7.10.2",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "core-js": "^3.6.5",
+    "regenerator-runtime": "^0.13.5",
+    "webpack": "^4.43.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=production",
+    "dev": "npx webpack-dev-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

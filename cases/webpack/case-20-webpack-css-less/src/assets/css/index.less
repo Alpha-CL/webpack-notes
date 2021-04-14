@@ -1,0 +1,157 @@
+/*********************************************************************************************************************/
+
+
+@red: #f40; // 变量: 可直接运算( 不同单位的运算虽然可以运算，但尽量规避 )
+@width: 10px;
+@height: 20px;
+
+.red {
+  color: @red;
+}
+
+.box {
+  width: @width * 2;
+  height: @height + 10px;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+.border() { // 仅在开发时显示
+  border: 1px solid red;
+}
+
+.color() { // 仅在开发时显示
+  background-color: black;
+}
+
+.center(@type:relative) { // 可以当作函数传参使用( 可以设置默认值 )
+  position: @type;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.target { // 混合
+  .border();
+  .color();
+  .center(absolute)
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+.wrap { // 选择器可直接嵌套
+
+  background-color: #999;
+  color: #fff;
+
+  > .con {
+    margin: 0 auto;
+    height: 40px;
+
+    .con-l {
+      float: left;
+
+      .btn {
+        background-color: #999;
+
+        &.selected { // 选择选中状态的按钮
+          background-color: red;
+        }
+      }
+    }
+
+    .con-r {
+      float: right;
+    }
+
+    &::after { // &: 表示接着某个元素继续选择
+      clear: both;
+      display: block;
+      content: " ";
+    }
+  }
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+@some: red;
+
+.demoFn {
+  margin: if((2>1), 0, 3px); // less 条件判断
+  color: if((iscolor(@some)), @some, black); // less 自带函数
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+@primary: #999999;
+@commonColor: #fff;
+
+.s1 {
+  background-color: @primary;
+  color: @commonColor;
+}
+
+.s2 {
+  background-color: darken(@primary, 20%); // 在原有基础颜色上加深 20%
+  color: @commonColor;
+}
+
+.s3 {
+  background-color: darken(@primary, 40%); // 在原有基础颜色上加深 40%
+  color: @commonColor;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+@width: 100px; // 全局变量
+@height: 100px; // 全局变量
+
+.personal {
+
+  @width: 50px; // 局部变量
+  @height: 50px; // 局部变量
+  @privateColor: red;
+
+  .con {
+    width: @width; // 重名变量，优先使用距离自身作用域最近的变量
+    height: @height;
+  }
+}
+
+.other {
+  width: @width;
+  height: @height;
+  //color: @privateColor; // 无法使用其他其他选择器中的局部变量
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+/* css 注释: 不需要转译 */
+
+// less 注释: 会转译为 css 注释 ( 建议使用，因开发时看的源代码为 less )
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+@import "common"; // 引入其他 less 模块
+
+.test {
+  color: @info; // 可引用其他模块的全局变量
+  background-color: @danger;
+}
+
+
+/*********************************************************************************************************************/

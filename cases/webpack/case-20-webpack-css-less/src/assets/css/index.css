@@ -1,0 +1,95 @@
+/*********************************************************************************************************************/
+.red {
+    color: #f40;
+}
+
+.box {
+    width: 200px;
+    height: 110px;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.target {
+    border: 1px solid red;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.wrap {
+    background-color: #999;
+    color: #fff;
+}
+
+.wrap > .con {
+    margin: 0 auto;
+    height: 40px;
+}
+
+.wrap > .con .con-l {
+    float: left;
+}
+
+.wrap > .con .con-l .btn {
+    background-color: #999;
+}
+
+.wrap > .con .con-l .btn.selected {
+    background-color: red;
+}
+
+.wrap > .con .con-r {
+    float: right;
+}
+
+.wrap > .con::after {
+    clear: both;
+    display: block;
+    content: " ";
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.demoFn {
+    margin: 0;
+    color: red;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.s1 {
+    background-color: #999999;
+    color: #fff;
+}
+
+.s2 {
+    background-color: #666666;
+    color: #fff;
+}
+
+.s3 {
+    background-color: #333333;
+    color: #fff;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.personal .con {
+    width: 50px;
+    height: 50px;
+}
+
+.other {
+    width: 100px;
+    height: 100px;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* css 注释: 不需要转译 */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.test {
+    color: #333;
+    background-color: #f40;
+}
+
+/*********************************************************************************************************************/

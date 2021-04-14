@@ -1,0 +1,20 @@
+{
+  "name": "case-15-webpack-Built-in-Plugins",
+  "version": "1.0.0",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

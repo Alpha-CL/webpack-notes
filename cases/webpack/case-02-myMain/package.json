@@ -1,0 +1,18 @@
+{
+  "name": "case-2-myMain",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "webpack-cli": "^3.3.11",
+    "webpack": "^4.43.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "webpack --mode=production",
+    "dev": "webpack --mode=development"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

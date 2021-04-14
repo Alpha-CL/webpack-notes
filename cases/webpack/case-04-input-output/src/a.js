@@ -1,0 +1,1 @@
+export let a = 'module-a';

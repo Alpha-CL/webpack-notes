@@ -1,0 +1,87 @@
+.OFyxgqWALmcd_gOql6qQe {
+    color: red;
+}
+
+._2U6_5xilgKplwccKEJT996 {
+    color: red;
+}
+
+._1aesi8rh1CNUTHVyj00Z3H {
+    width: 100px;
+    height: 100px;
+}
+
+::-webkit-input-placeholder {
+    color: red;
+}
+
+::-moz-placeholder {
+    color: red;
+}
+
+:-ms-input-placeholder {
+    color: red;
+}
+
+::-ms-input-placeholder {
+    color: red;
+}
+
+::placeholder {
+    color: red;
+}
+
+a:focus,a:hover {
+    color: #f40;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: bold;
+}
+
+h1._2-c5Hs2wsFnUlKO_YqXe0Q,h2._2-c5Hs2wsFnUlKO_YqXe0Q,h3._2-c5Hs2wsFnUlKO_YqXe0Q,h4._2-c5Hs2wsFnUlKO_YqXe0Q,h5._2-c5Hs2wsFnUlKO_YqXe0Q,h6._2-c5Hs2wsFnUlKO_YqXe0Q {
+    font-weight: bold;
+}
+
+
+._2T7Ufq90une-s2MGkcUrG_ {
+    color: red
+}
+
+
+._2T7Ufq90une-s2MGkcUrG_ .ADncAOnoda-dUud7Rdn5t {
+        color: green;
+    }
+
+
+._2T7Ufq90une-s2MGkcUrG_ > .ADncAOnoda-dUud7Rdn5t {
+        color: blue;
+    }
+
+
+._2T7Ufq90une-s2MGkcUrG_:hover {
+        color: black;
+    }
+
+._3I3FB3_DQrbS1BM5Rr8BvM {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+body {
+    color: rgb(0, 0, 0);
+
+    color: rgba(0, 0, 0, 0.9);
+
+    color: rgb(230, 0, 0);
+
+    color: rgb(128, 128, 128);
+
+    color: rgb(0, 0, 0);
+}
+
+
+/*# sourceMappingURL=main.d03e8.css.map*/

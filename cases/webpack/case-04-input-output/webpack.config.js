@@ -8,7 +8,9 @@ let path = require('path');
 
 module.exports = {
 
+
     mode: "development",
+
 
     /**
      * entry: 'des.js' === entry: { main: 'des.js' }
@@ -16,6 +18,7 @@ module.exports = {
      *
      * 设置入口模块，获取入口模块的依赖关系，从而合并所有模块的代码
      */
+
 
     entry: {
 
@@ -30,11 +33,11 @@ module.exports = {
 
     },
 
+
     output: {
 
         path: path.resolve(__dirname, 'test'),      // 必须是绝对路径，表示设置导出资源
                                                     // 默认 './dist/main.js'
-
 
         /**
          * filename: 'des.js';      // 静态设置
@@ -42,6 +45,7 @@ module.exports = {
          *
          * 用于设置相应 chunk 中 '合并js文件' 的路径名规则
          */
+
 
         /**
          * filename: '[rule].js'    // 动态规则设置
@@ -65,6 +69,7 @@ module.exports = {
          *
          * eg: filename: '[name]-[hash].js'
          */
+
 
         // filename: "script/test.js"               // 静态设置: 若有多个导入文件，则导出会冲突
         filename: "[name]-[hash:5].js"              // 根据 chunk 名称动态替换

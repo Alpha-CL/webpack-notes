@@ -24,7 +24,7 @@ module.exports = {
         rules: [
 
             /**
-             * if (test: regex) { execute use{ loaders } };
+             * if (test: regex) { execute use { loaders } };
              *
              *
              * 通过 test 匹配模块，若匹配到相应模块，则执行 use 中指定的 loader
@@ -37,8 +37,7 @@ module.exports = {
 
                 use: [                          // test 匹配成功后执行相应的 加载器
 
-                    {                           // 每个加载器为一个对象
-
+                    {                           // 每个加载器 为 一个对象
                         /**
                          * 可以配置多个 loader
                          *

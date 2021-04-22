@@ -9,7 +9,8 @@
     "webpack-cli": "^3.3.11"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode=production",
+    "dev": "webpack --mode=development"
   },
   "keywords": [],
   "author": "",
